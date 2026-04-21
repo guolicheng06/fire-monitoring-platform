@@ -1,6 +1,1 @@
-{
-  "framework": "nextjs",
-  "buildCommand": "apt-get update && apt-get install -y build-essential python3 && pnpm install && pnpm build",
-  "devCommand": "pnpm dev",
-  "installCommand": "apt-get update && apt-get install -y build-essential python3"
-}
+{"framework":"nextjs","buildCommand":"pnpm build","devCommand":"pnpm dev","installCommand":"pnpm install"}
