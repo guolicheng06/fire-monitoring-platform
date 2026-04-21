@@ -1,0 +1,32 @@
+{
+  "name": "yak300-device-connector",
+  "version": "1.1.0",
+  "description": "瑶安 YA-K300-S 设备连接工具 - 支持 RS485 串口、4G 模块和 HTTP 轮询 RS485 连接",
+  "main": "yak300-standalone.js",
+  "scripts": {
+    "rtu": "node yak300-standalone.js --mode rtu",
+    "4g": "node yak300-standalone.js --mode 4g",
+    "http485": "node yak300-standalone.js --mode http485",
+    "rtu:windows": "node yak300-standalone.js --mode rtu --path COM3",
+    "simple": "node simple-rtu.js",
+    "simple:windows": "node simple-rtu.js COM3",
+    "help": "node yak300-standalone.js --help",
+    "install": "node yak300-standalone.js --help"
+  },
+  "keywords": [
+    "ya-k300",
+    "modbus",
+    "rs485",
+    "gas-detector",
+    "4g",
+    "http"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "modbus-serial": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
